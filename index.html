@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chequeo Financiero</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/png" href="img/isotipo2.png">
+    <script src="GoogleSheets.js"></script>
+</head>
+
+<body>
+
+    <form method="POST"
+        action="https://script.google.com/macros/s/AKfycbyDNAnMeHeBoBthyBtJUR7dvewvdr7HWS3UhbxGwxqEOjfQ6_ri3J7xUu0_yZNfTE0y/exec"
+        onsubmit="return confirmarEnvio()">
+
+        <!-- Sección datos generales -->
+        <div id="seccion1">
+            <!--Contenedor de encabezado-->
+            <div id="contenedorEncabezado1">
+                <div id="formulario1">Formulario</div>
+                <div id="test1">TEST</div>
+                <div id="resultados1">Resultados</div>
+            </div><br>
+            <hr>
+            <img src="img/IDENTIDAD_HUELLA_BIENESTAR_FINANCIERO.png" alt="creativo" id="isotipoIMG1">
+            <p id="bienvenido1">BIENVENIDO</p><br>
+            <p id="mensajeBienvenida1">
+                Da el primer paso hacia tu tranquilidad financiera
+            </p><br>
+            <p id="mensajeBienvenida2">
+                    Con este test conocerás tu nivel de bienestar y las áreas donde puedas mejorar.
+            </p>
+
+            <div id="campoDatos1">
+
+                <p>INGRESA TUS DATOS</p><br>
+                <input name="Nombre" type="text" placeholder="Nombre" class="campo-form nombre" required><br><br>
+                <input name="Correo" type="email" placeholder="Correo" class="campo-form correo" required><br><br>
+                <select id="Genero" name="Genero" class="campo-form genero" required>
+                    <option value="">--Género--</option>
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                    <option value="Binario">Binario</option>
+                    <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+                </select><br><br>
+
+                <!--https://cdmx.conalep.edu.mx/oferta-educativa-por-carrera-conalep-cdmx-->
+
+                <select id="Formacion" name="Formacion" class="campo-form formacion" required><br><br>
+                    <option value="">--Formación--</option>
+                    <option value="Contaduria y administracion">Contaduría y administración</option>
+                    <option value="Turismo">Turismo</option>
+                    <option value="Mantenimiento e instalacion">Mantenimiento e Instalación</option>
+                    <option value="Produccion y transformacion">Producción y transformación</option>
+                    <option value="Electricidad y electronica">Electricidad y electrónica</option>
+                    <option value="Salud">Salud</option>
+                    <option value="Tecnologia y transporte">Tecnología y transporte</option>
+                </select><br><br>
+
+                <label for="f_nacimiento" id="f_nacimiento1">Fecha de Nacimiento:</label><br>
+                <input type="date" id="f_nacimiento" name="f_nacimiento" class="campo-form fecha" required><br><br>
+                <button type="button" onclick="mostrarPreguntas()">Continuar</button>
+                <img src="img/icono/CONSAR.png" alt="creativo" id="consarlogo1">
+            </div>
+        </div>
+
+        <!-- Sección 2 preguntas para llenar el TEST -->
+
+        <div id="seccion2" style="display: none;">
+
+            <img src="img/IDENTIDAD_HUELLA_BIENESTAR_FINANCIERO.png" alt="creativo" id="isotipoIMG2">
+            <!--Contenedor de encabezado-->
+            <div id="contenedorEncabezado2">
+                <div id="formulario2">Formulario</div>
+                <div id="test2">TEST</div>
+                <div id="resultados2">Resultados</div>
+            </div><br>
+
+            <p id="testTexto">TEST</p>
+            <p id="objetivoTXT">Este test tiene como objetivo conocer tus hábitos y conocimientos sobre el manejo de tus
+                recursos
+                económicos, el ahorro y la inversión.</p>
+            <fieldset>
+                <p id="instrucciones">Instrucciones:</p><br>
+                <p id="msjIntrucciones">Lee con atención cada enunciado y selecciona la opción que mejor refleje tu
+                    situación personal. No existen respuestas correctas o incorrectas;
+                    <span class="resaltado">el propósito es identificar tu nivel de educación financiera y fomentar una cultura de ahorro</span>
+                    para tu retiro.
+                </p><br>
+
+                <div id="contenedorPreguntas">
+                    <!-- Preguntas generadas dinámicamente -->
+                    <div id="preguntas-container"></div>
+                    <button type="submit">Enviar</button>
+                    <img src="img/icono/CONSAR.png" alt="creativo" id="consarlogo1">
+                </div>
+            </fieldset>
+        </div>
+
+        <!--Seccion de resultados-->
+        <div id="seccion3" style="display: none;">
+
+            <img src="img/IDENTIDAD_HUELLA_BIENESTAR_FINANCIERO.png" alt="creativo" id="isotipoIMG3">
+            <!--Contenedor de encabezado-->
+            <div id="contenedorEncabezado3">
+                <div id="formulario3">Formulario</div>
+                <div id="test3">TEST</div>
+                <div id="resultados3">Resultados</div>
+            </div>
+
+
+            <!-- Contenedor rectangular para el mensaje -->
+            <div id="resultado-contenedor">
+                <p id="resultado-texto"></p>
+            </div>
+
+            <img id="resultado-imagen" src="" alt="Nivel de Bienestar" style="display:none;">
+            <!--<button id="botonNewForm" type="button" onclick="reiniciarFormulario()">Hacer otra encuesta</button><br> -->
+            <img src="img/icono/CONSAR.png" alt="creativo" id="consarlogo3">
+        </div>
+    </form>
+</body>
+</html>

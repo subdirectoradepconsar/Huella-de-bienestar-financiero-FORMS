@@ -1,0 +1,644 @@
+/*Titulos con con patria, cuerpo con NOTOSANS REGULAR*/
+/* Reset y fuente base */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+hr {
+    border: none;
+    border-top: 1px solid white;
+    margin: 20px 0;
+}
+
+/* Contenedor de la página completa */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* centra horizontalmente todo */
+    justify-content: center; /* inicia desde arriba */
+    box-sizing: border-box;
+    /*background: #f5f5f5;       opcional: color de fondo */
+}
+
+/* Párrafos */
+p,hr {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+/* SECCION 1 paguina principal ---------------- SECCION1 ----------------------------------- SECCION 1*/
+
+/* Contenedor de encabezado principal */
+#seccion1 {
+    max-width: 870px;        /* ancho relativo a la pantalla */
+    width: 550px; 
+    align-content: center;   /* ocupa todo el ancho disponible */
+    margin: 0 auto;          /* centra horizontalmente */
+    padding: 20px;           /* espacio interno */
+    box-sizing: border-box;  /* incluye padding dentro del ancho */
+
+    /* Fondo degradado: 1/3 blanco, 2/3 color */
+    background: linear-gradient(
+        to bottom,
+        white 0%,        /* blanco desde arriba */
+        white 5%,       /* hasta 1/3 de la pantalla */
+        rgb(255, 254, 254) 5%,      /* desde 1/3 empieza el color */
+        rgb(204, 204, 204) 100%       /* color hasta abajo */
+  );
+}
+
+#contenedorEncabezado1 {
+    font-size: 12px; /*Tamnaño del texto*/
+    display: flex;
+    width: 350px;
+    height: 50px;
+    max-width: 980px;
+    margin: 5px 0 -10px auto;
+    
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+#contenedorEncabezado1>div {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+#formulario1 {
+    font-size: 11px; /*Tamnaño del texto*/
+    background-color: #2e3a35;    /* color relleno --------------------------------------Toto dengro con este valor*/
+    color: #fff;                  /* texto blanco */
+    border-top-left-radius: 30px; /* esquinas izquierdas */
+    border-bottom-left-radius: 30px;
+}
+#test1 {
+    font-size: 80%;
+    background-color: #cbcbcb;
+}
+#resultados1 {
+    font-size: 80%;
+    background-color: #cbcbcb;
+}
+
+/*Isotipo seccion 1*/
+
+#isotipoIMG1 {
+    width: 50%;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#bienvenido1 {
+    text-align: left;
+    font-size: 55px;
+    font-family: 'SpecialGothicExpandedOne', sans-serif; /*Tipografia*/
+    font-size: bold; /*Negritas*/
+    
+}
+
+#mensajeBienvenida1 {
+    margin-bottom: -9px; /*Espacio a voluntad en blanco para el texto*/
+    text-align: justify; 
+    font-size: 20px; /*Tamaño del texto*/
+    font-family: 'NotoSans', sans-serif; /*Tipografia*/
+}
+
+#mensajeBienvenida2 {
+    text-align: justify; /*Texto justificado*/
+    font-size: 16px; /*Tamnaño del texto*/
+    color: black;
+    font-family: 'NotoSans', sans-serif; /*Tipografia*/
+    font-style: italic ; /*Cursiva*/
+    font-weight: bold;
+}
+
+/*Contenedor de las entradas de datos nombre, Correo, Genero, Formacion, Fecha de nacimiento*/
+#campoDatos1 {
+    background-color: white; /* color de fondo del contenedor */
+    padding: 40px;             /* espacio interno */
+    border-radius: 15px;       /* bordes redondeados */
+    max-width: 500px;          /* ancho máximo para que no se vea gigante */
+    margin: 40px auto;         /* centra el contenedor en la página */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* sombra suave */
+    text-align: left;          /*Alineado todo a la derecha*/
+    font-family: 'NotoSans', sans-serif; /*Tipografia*/
+    font-style: bold; /*Negritas*/
+}
+
+/* Mnesaje princial p */
+#f_nacimiento1 {
+    margin-left: 22px; /*Separacion a lo largo*/
+    font-size: 14px;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+#consarlogo1 {
+    position: relative;
+    right: -70%;               /* mueve la imagen hacia la derecha un 20% */
+    top: 20%;                  /* mueve la imagen hacia abajo un 10% del contenedor */
+    width: 150px; 
+}
+
+#contenedorEncabezado {
+    float: right;
+    display: flex;
+    width: 40%;
+    margin-top: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+#contenedorEncabezado>div {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    /* espacio interno al texto */
+}
+
+/* Unificamos el estilo de inputs y selects (sección 1) con el de sección 2 */
+.campo-form {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #08810e;   /* mismo color que sección 2 */
+    border-radius: 8px;
+    background-color: #f0faff;  /* mismo fondo que sección 2 */
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(102, 102, 102);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto -15px auto;   /* espacio entre campos */
+    font-family: 'NotoSans', sans-serif; /*Tipografia*/
+    font-style: italic ; /*Cursiva*/
+}
+
+/* Opciones de los selects (también aplica en sección 1) */
+.campo-form option {
+    font-size: 15px;
+    color: rgb(102, 102, 102);
+    background-color: #e6f7ff;
+}
+.campo-form option:hover {
+    background-color: #b3e5fc;
+    color: #000;
+}
+
+/*Seccion 2 para el apartado de TEST ----------------SECCION 2 -------------------------------------SECCION2 -----------*/
+/* Contenedor de encabezado principal */
+#seccion2 {
+    max-width: 870px;          /* ancho relativo a la pantalla */
+    width: 550px;
+    align-content: center;    /* ocupa todo el ancho disponible */
+    margin: 0 auto;          /* centra horizontalmente */
+    padding: 20px;           /* espacio interno */
+    box-sizing: border-box;  /* incluye padding dentro del ancho */
+
+    /* Fondo degradado: 1/3 blanco, 2/3 color */
+    background: linear-gradient(
+        to bottom,
+        white 0%,        /* blanco desde arriba */
+        white 4%,       /* hasta 1/3 de la pantalla */
+        rgb(255, 254, 254) 4%,      /* desde 1/3 empieza el color */
+        rgb(204, 204, 204) 100%       /* color hasta abajo */
+  );
+}
+
+/* Imagen de Isotipo  */
+#isotipoIMG2 {
+    width: 25%;               /* ancho relativo del contenedor */
+    height: auto;             /* mantiene proporción */
+    display: block;
+}
+#contenedorEncabezado2 {
+    font-size: 12px; /*Tamnaño del texto*/
+    display: flex;
+    width: 350px;
+    height: 45px;
+    max-width: 500px; /*mueve posicion en horizontal*/
+    margin-top: -40px; /*mueve en posicion vertical*/
+    margin-left: 180px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+#contenedorEncabezado2>div {
+    flex: 1;
+    text-align: center;
+    padding: 19px;
+}
+
+#formulario2 {
+    font-size: 80%;
+    background-color: #dddedc;
+}
+#test2 {
+    font-size: 8px; /*Tamnaño del texto*/
+    background-color: #2e3a35;    /* color relleno */
+    color: #fff;                  /* texto blanco */
+    
+}
+#resultados2 {
+    font-size: 80%;
+    background-color: #dddedc;
+}
+
+#testTexto {
+    font-size: 50px; /*Tamaño del texto*/
+    text-align: start;
+    margin-bottom: 20px;  /*Espaciio entre texto inferiro */
+    color: black;
+    font-family: 'NotoSans', sans-serif; /*Tipografia*/
+    font-weight: bold; /*Negritas*/
+}
+
+#objetivoTXT {
+    text-align: justify; /*Texto justificado*/
+    font-size: 16px; /*Tamnaño del texto*/
+    color: black;
+    font-family: 'NotoSans', sans-serif; /*Tipografia*/
+    font-style: italic ; /*Cursiva*/
+    font-weight: bold;
+}
+
+#instrucciones {
+    margin-bottom: 7px;
+    justify-content: flex-start;
+    font-size: 30px;
+    /*Tamnaño del texto*/
+    font-weight: bold;
+    color: black;
+    font-family: 'NotoSans', sans-serif; /*Tipografia*/
+    font-style: bold ; /*Negritas*/
+}
+
+#msjIntrucciones {
+    text-align: justify; /*Texto justificado*/
+    font-size: 16px;/*Tamnaño del texto*/
+    color: black;
+    font-family: 'notoSans', sans-serif; /*Tipografia*/
+}
+.resaltado {
+    font-size: 14px;/* tamaño del texto */
+    text-align: justify;
+    color: black; /* color del texto */
+    
+    font-family: 'NotoSans', sans-serif; /*Tipografia*/
+    font-weight: bold; /*Negritas*/
+    font-style: italic ; /*Cursiva*/
+}
+
+#instrucciones,
+#msjIntrucciones {
+  margin: 0;          /* quitamos márgenes por defecto */
+  line-height: 1.3;   /* control de altura de línea */
+}
+
+#contenedorPreguntas {
+    width: 87%; /*Tamaño de en contenedor*/
+    background-color: white; /* color de fondo del contenedor */
+    padding: 5%;             /* espacio interno */
+    border-radius: 15px;       /* bordes redondeados */
+    max-width: 990px;          /* ancho máximo para que no se vea gigante */
+    margin: 40px auto;         /* centra el contenedor en la página */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* sombra suave */
+    text-align: left;  
+}
+
+/*Texto de las preguntas */
+#preguntas-container label {
+    width: 100%;
+    font-family: 'NotoSans', sans-serif; /*Tipografia*/
+    font-style: normal;
+    font-size: 16px;   /* tamaño */
+    color: black;    /* color del texto */
+    transition: all 0.3s ease;
+    display: block;    /* para que quede arriba del select */
+    margin-bottom: 5px; /*Separacion de el texto entre casilla de seleccion*/
+}
+
+/*Caracteristicas de el formato de las cajas de entrada */
+#preguntas-container select {
+    width: 90%; /*Tamaño de la caja de seleccion*/
+    padding: 5px 5px;
+    border: 2px solid #08810e;
+    border-radius: 5px;
+    background-color: white; /*Color de la caja de pregunta*/
+    font-size: 13px;   /* tamaño del texto de las opciones */
+    font-weight: 500;
+    color: black; /*color del texto de las opciones*/
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 0 auto -25px auto; /*Ajuste de espacios entre select*/
+    font-style: 'NotoSans', sans-serif; /*Tipografia*/
+    font-style: italic ; /*Cursiva*/
+}
+/* Opciones dentro del desplegable */
+#preguntas-container select option {
+    font-size: 14px;           /* tamaño del texto de cada opción */
+    color: black;            /* color del texto */
+    background-color: #e6f7ff; /* color de fondo de las opciones */
+    padding: 6px 10px;         /* espacio interno */
+}
+/* Cuando el usuario selecciona una opción distinta de la inicial */
+#preguntas-container select:valid {
+    background-color: #ecfdfd; /*Color al seleccionar*/
+}
+
+
+/* Instrucción y cuadro de preguntas */
+fieldset {
+    border: none;
+    /* quita borde del cuadro */
+    padding: 0;
+    margin: 0 0 5px 0;
+    /* espacio inferior antes del botón */
+}
+
+/*Seccion 3 para el apartado de RESULTADOS ----------------SECCION 3 -------------------------------------SECCION23-----------*/
+
+/* Contenedor de encabezado principal */
+#seccion3 {
+    max-width: 870px;          /* ancho relativo a la pantalla */
+    width: 550px;
+    align-content: center;    /* ocupa todo el ancho disponible */
+    margin: 0 auto;          /* centra horizontalmente */
+    padding: 20px;           /* espacio interno */
+    box-sizing: border-box;  /* incluye padding dentro del ancho */
+
+    /* Fondo degradado: 1/3 blanco, 2/3 color */
+    background: linear-gradient(
+        to bottom,
+        white 0%,        /* blanco desde arriba */
+        white 20%,       /* hasta 1/3 de la pantalla */
+        rgb(255, 254, 254) 20%,      /* desde 1/3 empieza el color */
+        rgb(204, 204, 204) 100%       /* color hasta abajo */
+  );
+}
+
+/* Imagen de Isotipo  */
+#isotipoIMG3 {
+    width: 25%;               /* ancho relativo del contenedor */
+    height: auto;             /* mantiene proporción */
+    display: block;
+}
+
+#contenedorEncabezado3 {
+    font-size: 12px;
+    width: 350px;
+    height: 45px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    align-items: center;
+
+    margin-left: auto; 
+    margin-right: 270px;
+
+    /* Movimiento libre sin romper composición */
+    transform: translate(180px, -40px); 
+    /* 50px → a la derecha | -30px → hacia arriba */
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    #contenedorEncabezado3 {
+        width: 100%;          /* ocupa todo el ancho */
+        height: auto;         /* se adapta en vertical */
+        margin: 0;            /* reseteamos márgenes */
+        transform: none;      /* quitamos desplazamiento */
+        border-radius: 0;     /* opcional: bordes rectos en móvil */
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+}
+
+#contenedorEncabezado3>div {
+    flex: 1;
+    text-align: center;
+    padding: 19px;
+}
+
+#formulario3 {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 80%;
+    background-color: #dddedc;
+}
+#test3 {
+    font-size: 80%;
+    background-color: #dddedc ;
+}
+#resultados3 {
+    font-size: 10px; /*Tamnaño del texto*/
+    background-color: #2e3a35;    /* color relleno */
+    color: #fff;                  /* texto blanco */
+}
+
+/* Imagen de resultado */
+#resultado-imagen {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(87, 87, 87, 0.9);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+#resultado-contenedor {
+    
+    line-height: 1.5;/* Espaciado de líneas */
+    border-radius: 15px;         /* esquinas redondeadas */
+    text-align: center;          /* centrar el texto */
+    border: 1px solid white;      /* borde gris claro */
+    background-color: white;   /* fondo suave */
+    padding: 15px;               /* espacio interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* sombra */
+    max-width: 500px;            /* ancho opcional */
+    margin: 40px auto;           /* centrado horizontal */
+}
+
+/* Mensaje puntaje final */
+#resultado-texto {
+    white-space: pre-line;
+    font-style: 'SpecialGothicExpandedOne', sans-serif; /*Tipografia*/
+    font-style: oblique;
+    font-weight: bold;
+}
+
+/* Botones para genero y fecha de namicimento*/
+button,
+#submit {
+    display: block;
+    width: 40%;
+    padding: 13px;
+    margin-top: 40px;
+    margin-right: auto;
+    background-color: #ec6765;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+
+button:hover,
+#submit:hover {
+    background-color: #0f38c0;
+}
+
+/* Imagen Pie de página */
+#consarlogo3 {
+    width: 30%;
+    display: block;   /* asegura que se comporte como bloque */
+    margin: 0 auto;   /* centra horizontalmente */
+    height: auto;     /* conserva proporciones */
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive automático */
+/*Ajustes generales en tablets y móviles medianos */
+@media (max-width: 768px) {
+  #seccion1, #seccion2, #seccion3 {
+    width: 95%;       /* usan casi todo el ancho */
+    padding: 15px;    /* menos padding */
+  }
+
+  #contenedorEncabezado1,
+  #contenedorEncabezado2,
+  #contenedorEncabezado3 {
+    width: 100%;          /* ocupan todo el ancho */
+    margin: 10px auto;    /* centrados automáticamente */
+    height: auto;         /* que se ajusten en altura */
+    font-size: 14px;
+  }
+
+  #isotipoIMG1, #isotipoIMG2, #isotipoIMG3 {
+    width: 50%;   /* isotipos más grandes */
+    margin: 10px auto;
+  }
+
+  #consarlogo1, #consarlogo3 {
+    position: static;   /* elimina posicionamiento forzado */
+    display: block;
+    margin: 20px auto;
+    width: 60%;
+  }
+}
+
+/* Extra pequeño (móviles chicos) */
+@media (max-width: 480px) {
+  #bienvenido1 {
+    font-size: 28px; /* más compacto */
+    text-align: center;
+  }
+
+  #mensajeBienvenida1,
+  #mensajeBienvenida2,
+  #objetivoTXT,
+  #msjIntrucciones {
+    font-size: 14px;
+  }
+
+  #testTexto {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  button,
+  #submit {
+    width: 100%;  /* botones ocupan todo el ancho */
+  }
+
+  #campoDatos1, 
+  #contenedorPreguntas,
+  #resultado-contenedor {
+    width: 95%;
+    padding: 15px;
+  }
+}
+
+/*Noto Sans Regular*/
+@font-face {
+    font-family: 'NotoSans';
+    src: url('fonts/NotoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Noto Sans Bold*/
+@font-face {
+    font-family: 'NotoSans';
+    src: url('fonts/NotoSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*Noto Sans Italic*/
+@font-face {
+    font-family: 'NotoSans';
+    src: url('fonts/NotoSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*Special Gothic Expanded One */
+@font-face {
+    font-family: 'SpecialGothicExpandedOne';
+    src: url('fonts/SpecialGothicExpandedOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

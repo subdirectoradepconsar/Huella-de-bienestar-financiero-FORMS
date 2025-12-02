@@ -38,7 +38,7 @@
 
                 <p>INGRESA TUS DATOS</p><br>
                 <input name="Nombre" type="text" placeholder="Nombre" class="campo-form nombre" required><br><br>
-                <input name="Correo" type="email" placeholder="Correo" class="campo-form correo" required><br><br>
+                <input name="Correo" type="email" placeholder="Correo" class="campo-form correo"><br><br>
                 <select id="Genero" name="Genero" class="campo-form genero" required>
                     <option value="">--Género--</option>
                     <option value="Hombre">Hombre</option>
@@ -51,17 +51,21 @@
 
                 <select id="Formacion" name="Formacion" class="campo-form formacion" required><br><br>
                     <option value="">--Formación--</option>
-                    <option value="Contaduria y administracion">Contaduría y administración</option>
+                    <option value="Contaduria y administracion">Ciencias Administrativas</option>
                     <option value="Turismo">Turismo</option>
                     <option value="Mantenimiento e instalacion">Mantenimiento e Instalación</option>
                     <option value="Produccion y transformacion">Producción y transformación</option>
                     <option value="Electricidad y electronica">Electricidad y electrónica</option>
                     <option value="Salud">Salud</option>
                     <option value="Tecnologia y transporte">Tecnología y transporte</option>
+                    <option value="Otros">Otros</option>
                 </select><br><br>
 
-                <label for="f_nacimiento" id="f_nacimiento1">Fecha de Nacimiento:</label><br>
-                <input type="date" id="f_nacimiento" name="f_nacimiento" class="campo-form fecha" required><br><br>
+                <div>
+                        <label for="f_nacimiento" id="f_nacimiento1">Año de nacimiento:</label><br>
+                        <input type="number" id="f_nacimiento" name="f_nacimiento" class="campo-form fecha"
+                            placeholder="Ej. 1995" min="1900" max="2025"><br>
+                    </div><br>
                 <button type="button" onclick="mostrarPreguntas()">Continuar</button>
                 <img src="img/icono/CONSAR.png" alt="creativo" id="consarlogo1">
             </div>

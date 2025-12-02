@@ -15,10 +15,10 @@ const preguntas = [
 // Asignacion de puntos por tipo de respuesta
 const opciones = [
     { valor: "4", texto: "Totalmente" },
-    { valor: "3", texto: "Muy bien" },
+    { valor: "3", texto: "Frecuentemente" },
     { valor: "2", texto: "En cierta medida" },
     { valor: "1", texto: "Muy poco" },
-    { valor: "0", texto: "No me describe" }
+    { valor: "0", texto: "No / No me describe" }
 ];
 
 // Funcion de ventanas 
@@ -96,6 +96,7 @@ function mostrarPreguntas() {
     const nombre = document.querySelector('input[name="Nombre"]');
     const correo = document.querySelector('input[name="Correo"]');
     const genero = document.getElementById('Genero');
+    const formacion = document.getElementById('Formacion');
     const fecha = document.getElementById('f_nacimiento');
 
     if (!nombre.value.trim()) {
@@ -103,19 +104,14 @@ function mostrarPreguntas() {
         nombre.focus();
         return;
     }
-    if (!correo.value.trim()) {
-        alert("Por favor ingresa tu correo");
-        correo.focus();
-        return;
-    }
     if (!genero.value) {
         alert("Por favor selecciona tu género");
         genero.focus();
         return;
     }
-    if (!Formacion.value) {
-        alert("Por favor selecciona tu área de formación");
-        Formacion.focus();
+    if (!formacion.value){
+        alert("Por favor selecciona tu area de formación");
+        formacion.focus();
         return;
     }
     if (!fecha.value) {

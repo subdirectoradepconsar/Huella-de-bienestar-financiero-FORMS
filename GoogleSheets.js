@@ -1,15 +1,15 @@
 // Definición de preguntas y opciones
 const preguntas = [
-    { texto: "¿Estoy construyendo con acciones concretas mi futuro financiero?", name: "P1_FuturoFinanciero" },
-    { texto: "¿Conozco qué es la cuenta Afore y que será parte de mi retiro?", name: "P2_ConocimientoAfore" },
-    { texto: "¿El dinero que manejo es suficiente para disfrutar mi vida sin preocupaciones?", name: "P3_SinPreocupaciones" },
-    { texto: "¿Comprendo que en las inversiones existe una correlación entre riesgo y rendimiento?", name: "P4_RiesgoRendimiento" },
-    { texto: "Sé que desde mi primer empleo formal tendré una cuenta Afore y debo registrarme.", name: "P5_PrimerEmpleoAfore" },
-    { texto: "¿Contemplo el ahorro dentro de mi presupuesto mensual?", name: "P6_AhorroMensual" },
-    { texto: "¿Ahorro con regularidad para metas futuras?", name: "P7_AhorroFuturo" },
-    { texto: "¿Confío en las instituciones que manejan mis recursos, como las Afore o los bancos?", name: "P8_ConfianzaInstituciones" },
-    { texto: "¿Entiendo cómo funciona el interés compuesto?", name: "P9_InteresCompuesto" },
-    { texto: "¿Estoy tomando decisiones que me ayuden a cumplir metas financieras a lo largo de mi vida?", name: "P10_DecisionesFinancieras" }
+    { texto: "¿Estoy construyendo con acciones concretas mi futuro financiero?", name: "pregunta1" },
+    { texto: "¿Conozco qué es la cuenta Afore y que será parte de mi retiro?", name: "pregunta2" },
+    { texto: "¿El dinero que manejo es suficiente para disfrutar mi vida sin preocupaciones?", name: "pregunta3" },
+    { texto: "¿Comprendo que en las inversiones existe una correlación entre riesgo y rendimiento?", name: "pregunta4" },
+    { texto: "Sé que desde mi primer empleo formal tendré una cuenta Afore y debo registrarme.", name: "pregunta5" },
+    { texto: "¿Contemplo el ahorro dentro de mi presupuesto mensual?", name: "pregunta6" },
+    { texto: "¿Ahorro con regularidad para metas futuras?", name: "pregunta7" },
+    { texto: "¿Confío en las instituciones que manejan mis recursos, como las Afore o los bancos?", name: "pregunta8" },
+    { texto: "¿Entiendo cómo funciona el interés compuesto?", name: "pregunta9" },
+    { texto: "¿Estoy tomando decisiones que me ayuden a cumplir metas financieras a lo largo de mi vida?", name: "pregunta10" }
 ];
 
 // Asignacion de puntos por tipo de respuesta
@@ -162,3 +162,6 @@ function mostrarPreguntas() {
 function reiniciarFormulario() {
     location.reload();
 }
+
+//  "https://script.google.com/macros/s/AKfycbyDNAnMeHeBoBthyBtJUR7dvewvdr7HWS3UhbxGwxqEOjfQ6_ri3J7xUu0_yZNfTE0y/exec"
+

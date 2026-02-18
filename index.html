@@ -13,7 +13,7 @@
 <body>
 
     <form method="POST"
-        action="https://script.google.com/macros/s/AKfycbyDNAnMeHeBoBthyBtJUR7dvewvdr7HWS3UhbxGwxqEOjfQ6_ri3J7xUu0_yZNfTE0y/exec"
+        action="https://script.google.com/macros/s/AKfycbzmcDTH97aFluCG6ZL6uhSe1714no9wbPLxgfteq55XLd4TPO2g3ranmWwwUrYmt3n3/exec"
         onsubmit="return confirmarEnvio()">
 
         <!-- Sección datos generales -->
@@ -39,6 +39,15 @@
                 <p>INGRESA TUS DATOS</p><br>
                 <input name="Nombre" type="text" placeholder="Nombre" class="campo-form nombre" required><br><br>
                 <input name="Correo" type="email" placeholder="Correo" class="campo-form correo"><br><br>
+                <select name="Estatus" id="Estatus" class="campo-form genero" >
+                    <option value="">--Relación con la institución--</option>
+                    <option value="">Estudiante</option>
+                    <option value="">Cuerpo docente</option>
+                    <option value="">Directivos</option>
+                    <option value="">Administrativos</option>
+                    <option value="">Personal de mantenimiento</option>
+                    <option value="">Otros</option>
+                </select><br><br>
                 <select id="Genero" name="Genero" class="campo-form genero" required>
                     <option value="">--Género--</option>
                     <option value="Hombre">Hombre</option>
